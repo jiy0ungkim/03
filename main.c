@@ -3,15 +3,16 @@
 
 int main(int argc, char *argv[])
 {
-    char input;
-    char output;
+    int a;
+    int b;
     
-    printf("enter a character : ");
-    scanf("%c", &input);
+    printf("enter a numerator  : ");
+    scanf("%d", &a);
     
-    output = input + 1;
+    printf("enter a denominator : ");
+    scanf("%d", &b); 
     
-    printf("the next character of %c (%i) is %c (%i)\n", input, input, output, output);
+    printf("the result is  %f.\n", (float)a/b);
 
     system("PAUSE");
     return 0;
